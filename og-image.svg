@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">PCラボ｜PC構成診断・パーツ比較</title><desc id="desc">予算・用途・ゲームからゲーミングPCとパーツ構成を診断</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080b12"/><stop offset="1" stop-color="#202733"/></linearGradient><linearGradient id="line" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d4d4d8"/><stop offset="1" stop-color="#737373"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#bg)"/><circle cx="1010" cy="130" r="220" fill="#a3a3a3" opacity=".08"/><circle cx="1030" cy="510" r="260" fill="#a3a3a3" opacity=".06"/>
+<rect x="80" y="88" width="94" height="72" rx="12" fill="#111827" stroke="url(#line)" stroke-width="4"/><path d="M127 160v16m-24 0h48" stroke="#d4d4d8" stroke-width="5" stroke-linecap="round"/><path d="M102 108h50v35h-50z" fill="#a3a3a3" opacity=".22"/><path d="M111 125l10 8 22-18" fill="none" stroke="#e5e7eb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="202" y="143" font-family="Noto Sans JP, sans-serif" font-size="38" font-weight="700" fill="#f5f5f5">PCラボ</text>
+<text x="80" y="285" font-family="Noto Sans JP, sans-serif" font-size="62" font-weight="900" fill="#ffffff">あなたに合うPC構成を診断</text>
+<text x="84" y="355" font-family="Noto Sans JP, sans-serif" font-size="30" fill="#d4d4d8">予算・用途・ゲーム・解像度からパーツ選びをサポート</text>
+<g font-family="Noto Sans JP, sans-serif" font-size="24" font-weight="700" fill="#f5f5f5"><rect x="84" y="430" width="190" height="58" rx="12" fill="#27272a" stroke="#52525b"/><text x="179" y="467" text-anchor="middle">PC診断</text><rect x="294" y="430" width="220" height="58" rx="12" fill="#27272a" stroke="#52525b"/><text x="404" y="467" text-anchor="middle">パーツ比較</text><rect x="534" y="430" width="220" height="58" rx="12" fill="#27272a" stroke="#52525b"/><text x="644" y="467" text-anchor="middle">互換性チェック</text></g>
+<text x="84" y="570" font-family="Noto Sans JP, sans-serif" font-size="20" fill="#a1a1aa">pc-lab-tech.github.io/pc-shindan/</text></svg>
