@@ -7,16 +7,21 @@
     <meta name="theme-color" content="#0b0f19">
     <meta name="color-scheme" content="dark">
     <link rel="canonical" href="https://pc-lab-tech.github.io/pc-shindan/">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PCラボ｜PC構成診断・パーツ比較">
     <meta name="twitter:description" content="予算と用途から自分に合うPCを探そう。構成診断、パーツ比較、互換性チェック、PCニュース。">
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pc-lab-tech.github.io/pc-shindan/favicon.svg">
+    <meta name="twitter:image" content="https://pc-lab-tech.github.io/pc-shindan/favicon.svg">
     <meta property="og:title" content="PCラボ｜PC構成診断・パーツ比較">
     <meta property="og:description" content="予算と用途から自分に合うPCを探そう。構成診断、パーツ比較、互換性チェック、PCニュース。">
     <meta property="og:url" content="https://pc-lab-tech.github.io/pc-shindan/">
     <meta property="og:site_name" content="PCラボ">
-    <title>PCラボ｜あなたに最適なPCが見つかる</title>
+    <title>PCラボ｜PC構成診断・パーツ比較</title>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","name":"PCラボ","url":"https://pc-lab-tech.github.io/pc-shindan/","description":"予算・用途・ゲーム・解像度からPC構成を診断し、パーツ選びをサポートします。","inLanguage":"ja-JP"}
+    </script>
     <!-- Google Fonts & Font Awesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +32,7 @@
         .skip-link{position:absolute;left:1rem;top:-100px;z-index:2000;padding:.75rem 1rem;background:var(--card-bg);color:var(--text-main);border:2px solid var(--accent-cyan);border-radius:var(--radius-md);font-weight:700}
         .skip-link:focus{top:1rem}
         :focus-visible{outline:3px solid var(--accent-cyan);outline-offset:3px}
+        :root{--border-color:var(--card-border)}
         .news-tools{display:grid;gap:.4rem;margin:.2rem 0 1rem}
         .news-tools label{font-size:.82rem;font-weight:700}
         .news-tools input{width:100%;min-width:0;padding:.75rem .85rem;border:1px solid var(--card-border);border-radius:9px;background:#0d1422;color:var(--text-main);font:inherit}
@@ -660,6 +666,8 @@
         .current-pc-links a{font-size:.82rem;color:var(--text-main);text-decoration:underline;text-underline-offset:3px}
         .current-pc-caveat{font-size:.76rem!important;margin-top:.9rem!important}
         @media(max-width:600px){.current-pc-grid{grid-template-columns:1fr}}
+        /* Mobile navigation and long component names */
+        @media(max-width:768px){header{height:auto;min-height:0}header .header-inner{align-items:flex-start;gap:.6rem;flex-direction:column;padding:.7rem 0}.nav-links{display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:100%;gap:.45rem;padding:.25rem 0 .5rem;scrollbar-width:thin}.nav-links li{flex:0 0 auto}.nav-links a{white-space:nowrap;padding:.45rem .6rem}.spec-item-val,.recommend-card li,.recommendation-card li{white-space:normal;overflow-wrap:anywhere;text-overflow:clip}.spec-list{min-width:0}}
 
 </style>
 </head>
@@ -749,8 +757,8 @@
                             <optgroup label="AMD Radeon"><option value="rx580">Radeon RX 580</option><option value="rx6600">Radeon RX 6600</option><option value="rx6700xt">Radeon RX 6700 XT</option><option value="rx6800xt">Radeon RX 6800 XT</option><option value="rx7600">Radeon RX 7600</option><option value="rx7700xt">Radeon RX 7700 XT</option><option value="rx7800xt">Radeon RX 7800 XT</option><option value="rx7900xt">Radeon RX 7900 XT</option><option value="rx7900xtx">Radeon RX 7900 XTX</option><option value="rx9060xt">Radeon RX 9060 XT 8GB / 16GB</option><option value="rx9070">Radeon RX 9070</option><option value="rx9070xt">Radeon RX 9070 XT</option></optgroup>
                         </select></div>
                         <div class="current-pc-field"><label for="current-psu">現在の電源容量</label><select id="current-psu"><option value="unknown" selected>わからない</option><option value="450">450W以下</option><option value="500">500W</option><option value="550">550W</option><option value="600">600W</option><option value="650">650W</option><option value="750">750W</option><option value="850">850W</option><option value="1000">1000W</option><option value="1200">1200W以上</option></select></div>
-                        <div class="current-pc-field"><label for="current-ram">メモリ容量</label><select id="current-ram"><option value="8">8GB以下</option><option value="16">16GB</option><option value="32">32GB</option><option value="48" selected>48GB以上</option><option value="unknown">わからない</option></select></div>
-                        <div class="current-pc-field"><label for="current-storage">ストレージ</label><select id="current-storage"><option value="hdd">HDD中心</option><option value="ssd-small">SSD 500GB以下</option><option value="ssd-large" selected>SSD 1TB以上</option><option value="unknown">わからない</option></select></div>
+                        <div class="current-pc-field"><label for="current-ram">メモリ容量</label><select id="current-ram"><option value="8">8GB以下</option><option value="16">16GB</option><option value="32">32GB</option><option value="48">48GB以上</option><option value="unknown" selected>わからない</option></select></div>
+                        <div class="current-pc-field"><label for="current-storage">ストレージ</label><select id="current-storage"><option value="hdd">HDD中心</option><option value="ssd-small">SSD 500GB以下</option><option value="ssd-large">SSD 1TB以上</option><option value="unknown" selected>わからない</option></select></div>
                         <div class="current-pc-field"><label for="current-usage">主な用途</label><select id="current-usage"><option value="fps" selected>ValorantなどFPS・高FPS</option><option value="heavy">重い3Dゲーム・高画質</option><option value="creator">配信・動画編集・AI</option><option value="daily">普段使い・勉強</option></select></div>
                         <div class="current-pc-field"><label for="current-problem">いちばん困っていること</label><select id="current-problem"><option value="fps" selected>FPSが伸びない・カクつく</option><option value="load">ゲームの起動・読み込みが遅い</option><option value="memory">重い作業で固まる・メモリ不足</option><option value="quality">画質を上げると重い</option><option value="noise">熱・ファンの音・温度が気になる</option><option value="none">特に不満はない・全体を診断したい</option></select></div>
                         <div class="current-pc-field"><label for="current-budget">アップグレード予算</label><select id="current-budget"><option value="1">1万円以内</option><option value="3">3万円以内</option><option value="6" selected>6万円以内</option><option value="10">10万円以内</option><option value="20">20万円以内</option><option value="any">予算より性能重視</option></select></div>
@@ -842,6 +850,9 @@
                                 <div class="spec-item-label"><i class="fa-solid fa-hard-drive"></i> ストレージ</div>
                                 <div class="spec-item-val" id="spec-ssd">1TB NVMe M.2 SSD</div>
                             </div>
+                            <div class="spec-item"><div class="spec-item-label"><i class="fa-solid fa-memory"></i> マザーボード</div><div class="spec-item-val" id="spec-board">対応マザーボード</div></div>
+                            <div class="spec-item"><div class="spec-item-label"><i class="fa-solid fa-bolt"></i> 電源（PSU）</div><div class="spec-item-val" id="spec-psu">650W以上・構成に合わせて選定</div></div>
+                            <div class="spec-item"><div class="spec-item-label"><i class="fa-solid fa-box"></i> ケース</div><div class="spec-item-val" id="spec-case">対応サイズのケース</div></div>
                         </div>
 
                         <div id="diagnosis-build-detail" class="builder-notes" style="margin:1rem 0" aria-live="polite"></div>
@@ -1141,6 +1152,10 @@
                 document.getElementById('spec-gpu').textContent=build.gpu.n;
                 document.getElementById('spec-ram').textContent=build.ram.n;
                 document.getElementById('spec-ssd').textContent=build.ssd.n;
+                document.getElementById('spec-board').textContent=build.board.n;
+                document.getElementById('spec-psu').textContent=build.psu.n+'（定格 '+build.psu.w+'W）';
+                document.getElementById('spec-case').textContent=build.pcCase.n;
+                document.querySelectorAll('#diagnosis .option-btn').forEach(button=>{button.setAttribute('aria-pressed',String(button.classList.contains('active')));});
                 const detail=document.getElementById('diagnosis-build-detail');detail.replaceChildren();
                 const heading=document.createElement('strong');heading.textContent='おすすめ構成の内訳（参考価格）';detail.append(heading);
                 const list=document.createElement('ul');list.style.marginTop='.5rem';
@@ -1187,11 +1202,11 @@
                 cpu:[
                     {n:'Ryzen 5 5500',p:11000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 5 5600',p:14000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 7 5700X',p:22000,s:'AM4',r:'DDR4',t:65},{n:'Ryzen 7 5700X3D',p:32000,s:'AM4',r:'DDR4',t:105},
                     {n:'Ryzen 5 7500F',p:24000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 5 7600',p:30000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 7 7700',p:38000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 7 7800X3D',p:60000,s:'AM5',r:'DDR5',t:120},{n:'Ryzen 7 9700X',p:50000,s:'AM5',r:'DDR5',t:65},{n:'Ryzen 7 9800X3D',p:75000,s:'AM5',r:'DDR5',t:120},{n:'Ryzen 9 9900X',p:65000,s:'AM5',r:'DDR5',t:120},{n:'Ryzen 9 9950X',p:90000,s:'AM5',r:'DDR5',t:170},
-                    {n:'Core i3-12100F',p:11000,s:'LGA1700',r:'DDR4',t:89},{n:'Core i5-12400F',p:17000,s:'LGA1700',r:'DDR4',t:117},{n:'Core i5-13400F',p:22000,s:'LGA1700',r:'DDR4',t:148},{n:'Core i5-14400F',p:23000,s:'LGA1700',r:'DDR5',t:148},{n:'Core i7-14700F',p:48000,s:'LGA1700',r:'DDR5',t:219},{n:'Core Ultra 5 245K',p:38000,s:'LGA1851',r:'DDR5',t:159},{n:'Core Ultra 7 265K',p:65000,s:'LGA1851',r:'DDR5',t:250},{n:'Core Ultra 9 285K',p:95000,s:'LGA1851',r:'DDR5',t:250}
+                    {n:'Core i3-12100F',p:11000,s:'LGA1700',r:'DDR4',t:89},{n:'Core i5-12400F',p:17000,s:'LGA1700',r:'DDR4',t:117},{n:'Core i5-12600K',p:24000,s:'LGA1700',r:'DDR4',t:125},{n:'Core i7-12700',p:30000,s:'LGA1700',r:'DDR4',t:180},{n:'Core i5-13400F',p:22000,s:'LGA1700',r:'DDR4',t:148},{n:'Core i5-14400F',p:23000,s:'LGA1700',r:'DDR5',t:148},{n:'Core i7-14700F',p:48000,s:'LGA1700',r:'DDR5',t:219},{n:'Core Ultra 5 245K',p:38000,s:'LGA1851',r:'DDR5',t:159},{n:'Core Ultra 7 265K',p:65000,s:'LGA1851',r:'DDR5',t:250},{n:'Core Ultra 9 285K',p:95000,s:'LGA1851',r:'DDR5',t:250}
                 ],
                 gpu:[
-                    {n:'GeForce RTX 3050 6GB',p:23000,w:70},{n:'GeForce RTX 5050 8GB',p:35000,w:130},{n:'Radeon RX 6600 8GB',p:28000,w:132},{n:'Radeon RX 7600 8GB',p:38000,w:165},{n:'GeForce RTX 4060 8GB',p:40000,w:115},{n:'GeForce RTX 4060 Ti 8GB',p:55000,w:160},{n:'GeForce RTX 4060 Ti 16GB',p:65000,w:165},
-                    {n:'GeForce RTX 5060 8GB',p:55000,w:145},{n:'GeForce RTX 5060 Ti 8GB',p:65000,w:180},{n:'GeForce RTX 5060 Ti 16GB',p:78000,w:180},{n:'Radeon RX 9060 XT 8GB',p:50000,w:160},{n:'Radeon RX 9060 XT 16GB',p:60000,w:180},{n:'GeForce RTX 5070 12GB',p:90000,w:250},{n:'Radeon RX 9070 16GB',p:95000,w:220},{n:'Radeon RX 9070 XT 16GB',p:105000,w:304},{n:'GeForce RTX 5070 Ti 16GB',p:130000,w:300},{n:'GeForce RTX 5080 16GB',p:190000,w:360},{n:'GeForce RTX 5090 32GB',p:400000,w:575}
+                    {n:'GeForce RTX 3050 6GB',p:23000,w:70},{n:'GeForce RTX 3060 12GB',p:35000,w:170},{n:'GeForce RTX 3060 Ti 8GB',p:40000,w:200},{n:'GeForce RTX 5050 8GB',p:35000,w:130},{n:'Radeon RX 6600 8GB',p:28000,w:132},{n:'Radeon RX 6650 XT 8GB',p:33000,w:176},{n:'Radeon RX 7600 8GB',p:38000,w:165},{n:'Radeon RX 7600 XT 16GB',p:48000,w:190},{n:'Intel Arc B580 12GB',p:42000,w:190},{n:'GeForce RTX 4060 8GB',p:40000,w:115},{n:'GeForce RTX 4060 Ti 8GB',p:55000,w:160},{n:'GeForce RTX 4060 Ti 16GB',p:65000,w:165},
+                    {n:'GeForce RTX 5060 8GB',p:55000,w:145},{n:'GeForce RTX 5060 Ti 8GB',p:65000,w:180},{n:'GeForce RTX 5060 Ti 16GB',p:78000,w:180},{n:'Radeon RX 9060 XT 8GB',p:50000,w:160},{n:'Radeon RX 9060 XT 16GB',p:60000,w:180},{n:'GeForce RTX 5070 12GB',p:90000,w:250},{n:'Radeon RX 9070 16GB',p:95000,w:220},{n:'Radeon RX 9070 XT 16GB',p:105000,w:304},{n:'Radeon RX 7900 GRE 16GB',p:85000,w:260},{n:'GeForce RTX 5070 Ti 16GB',p:130000,w:300},{n:'GeForce RTX 5080 16GB',p:190000,w:360},{n:'GeForce RTX 5090 32GB',p:400000,w:575}
                 ],
                 board:[
                     {n:'A520 mATX（AM4 / DDR4）',p:9000,s:'AM4',r:'DDR4',z:'mATX'},{n:'B550 mATX（AM4 / DDR4）',p:12000,s:'AM4',r:'DDR4',z:'mATX'},{n:'B550 ATX（AM4 / DDR4）',p:15000,s:'AM4',r:'DDR4',z:'ATX'},
