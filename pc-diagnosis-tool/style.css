@@ -1,0 +1,14 @@
+/* 黒・グレー基調。既存サイトのCSSと衝突しないよう .gp- 配下のみ指定 */
+body.gp{margin:0;background:#111;color:#e6e6e6;font-family:system-ui,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.7}
+.gp main{max-width:760px;margin:0 auto;padding:16px}
+.gp h1{font-size:1.4rem}
+.gp form{background:#1c1c1e;border:1px solid #333;border-radius:12px;padding:16px;display:grid;gap:14px}
+.gp label{display:grid;gap:4px;font-size:.95rem;color:#bbb}
+.gp select{background:#2a2a2d;color:#fff;border:1px solid #444;border-radius:8px;padding:12px;font-size:1rem}
+.gp button,.gp .btn{display:inline-block;background:#e6e6e6;color:#111;border:0;border-radius:8px;padding:12px 18px;font-size:1rem;font-weight:700;text-decoration:none;cursor:pointer;text-align:center}
+.gp .card{background:#1c1c1e;border:1px solid #333;border-radius:12px;padding:16px;margin-top:16px}
+.gp .price{font-size:1.3rem;font-weight:700;margin:0}
+.gp dl{display:grid;grid-template-columns:5em 1fr;gap:2px 8px;margin:10px 0}
+.gp dt{color:#888}.gp dd{margin:0}
+.gp .upd,.gp .note{font-size:.8rem;color:#999}
+.gp .msg{background:#1c1c1e;border:1px solid #333;border-radius:12px;padding:16px}
