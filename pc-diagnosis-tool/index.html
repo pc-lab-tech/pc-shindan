@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ゲーミングPC診断｜PC診断室</title>
+<meta name="description" content="予算・ゲーム・解像度から、条件に合うゲーミングPCを診断します。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="gp">
+<main>
+<h1>ゲーミングPC診断</h1>
+<form id="form">
+ <label>予算<select name="budget"><option value="150000">15万円</option><option value="200000" selected>20万円</option><option value="250000">25万円</option></select></label>
+ <label>用途<select name="use"><option>ゲーム</option><option>配信</option><option>動画編集</option></select></label>
+ <label>ゲーム<select name="game"><option>Apex Legends</option><option>VALORANT</option><option>Minecraft</option><option>その他</option></select></label>
+ <label>解像度<select name="resolution"><option>1080p</option><option>1440p</option></select></label>
+ <label>重視する性能<select name="priority"><option>FPS</option><option>画質</option><option selected>バランス</option></select></label>
+ <button type="submit">診断する</button>
+</form>
+<div id="result" aria-live="polite"></div>
+<p class="note">診断内容はサーバーに送信されません。計測は「開始・完了・結果表示・販売ページクリック」の回数のみです。当ページには広告・アフィリエイトリンクが含まれる場合があります。</p>
+</main>
+<script src="diagnosis.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
