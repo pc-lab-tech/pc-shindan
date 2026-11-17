@@ -1,0 +1,9 @@
+{
+  "updated": "2026-11-17",
+  "note": "SAMPLE: 架空のダミーデータです。公開前に必ず実在の商品・価格・リンクに差し替えてください。",
+  "items": [
+    {"id":"sample-150-a","name":"【サンプル】15万円クラス ゲーミングPC A","price":148000,"cpu":"Ryzen 5 7500F","gpu":"GeForce RTX 5060","ram_gb":16,"ssd_gb":1000,"psu_w":650,"cpu_tier":6,"gpu_tier":5,"cpu_w":65,"gpu_w":145,"url":"https://example.com/sample-a","updated":"2026-11-17"},
+    {"id":"sample-200-a","name":"【サンプル】20万円クラス ゲーミングPC B","price":198000,"cpu":"Ryzen 7 7700","gpu":"GeForce RTX 5060 Ti 16GB","ram_gb":32,"ssd_gb":1000,"psu_w":750,"cpu_tier":7,"gpu_tier":6,"cpu_w":65,"gpu_w":180,"url":"https://example.com/sample-b","updated":"2026-11-17"},
+    {"id":"sample-250-a","name":"【サンプル】25万円クラス ゲーミングPC C","price":248000,"cpu":"Ryzen 7 9700X","gpu":"GeForce RTX 5070","ram_gb":32,"ssd_gb":2000,"psu_w":750,"cpu_tier":8,"gpu_tier":7,"cpu_w":65,"gpu_w":250,"url":"https://example.com/sample-c","updated":"2026-11-17"}
+  ]
+}
